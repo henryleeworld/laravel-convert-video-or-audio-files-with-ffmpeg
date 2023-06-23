@@ -6,7 +6,7 @@ use FFMpeg\Format\Video\WMV;
 use ProtoneMedia\LaravelFFMpeg\Filters\WatermarkFactory;
 use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
 
-class FfmpegController extends Controller
+class FFMpegController extends Controller
 {
     public function addWatermark() 
     {
