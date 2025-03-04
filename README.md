@@ -1,8 +1,9 @@
-# Laravel 10 使用 FFmpeg 執行影片或音訊轉檔
+# Laravel 11 使用 FFmpeg 執行影片或音訊轉檔
 
 引入 pbmedia 的 laravel-ffmpeg 套件來擴增使用 FFmpeg 執行影片或音訊轉檔，FFmpeg 是影片處理最常用的開源軟體，它功能強大，用途廣泛，大量用於影片網站和商業軟體（比如 Youtube 和 iTunes），也是許多音訊和影片格式的標準編碼／解碼實現。
 
 ## 使用方式
+- 打開 php.ini 檔案，啟用 PHP 擴充模組 imagick，並重啟服務器。
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
 ```sh
 $ git clone
@@ -18,13 +19,12 @@ $ php artisan key:generate
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/ffmpeg/watermark/` 來進行影片加上浮水印轉檔。
-> 注意：必須安裝並啟用 GD 圖像庫。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/M5vNlo6.png)
+![](https://i.imgur.com/ppoHNIy.png)
 > 如果精彩的影片內容被盜用就會十分苦惱，如果能加上自己獨一無二的浮水印不僅能將個人品牌傳播，還能減少被盜用的風險
 
-![](https://i.imgur.com/oOUqmbC.png)
+![](https://i.imgur.com/aHOxBXs.png)
 > 更好的傳播自身品牌

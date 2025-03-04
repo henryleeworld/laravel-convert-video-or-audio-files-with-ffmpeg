@@ -11,7 +11,7 @@ class FFMpegController extends Controller
     public function addWatermark() 
     {
         FFMpeg::fromDisk('video')
-        ->open('gundam-zz-opening-001.mp4')
+        ->open('gundam-seed-series-the-sword-of-hope-with-meteor.mp4')
         ->addWatermark(function(WatermarkFactory $watermark) {
             $watermark->fromDisk('images')
                 ->open('kamen-rider-black-icon.jpg')
@@ -23,7 +23,7 @@ class FFMpegController extends Controller
         ->export()
         ->toDisk('converted_video')
         ->inFormat(new WMV)
-        ->save('gundam-zz-opening-001-with-watermark.wmv');
-        echo '影片加上浮水印' . PHP_EOL;
+        ->save('gundam-seed-series-the-sword-of-hope-with-meteor-with-watermark.wmv');
+        echo __('Add watermark to video') . PHP_EOL;
     }
 }
